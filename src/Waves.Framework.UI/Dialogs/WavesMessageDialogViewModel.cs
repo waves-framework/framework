@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 using ReactiveUI.Fody.Helpers;
-using Waves.Framework.Core.Extensions;
+using Waves.Framework.Core._old.Extensions;
 using Waves.Framework.UI.Base.Attributes;
 using Waves.Framework.UI.Dialogs.Enums;
 using Waves.Framework.UI.Dialogs.Parameters;

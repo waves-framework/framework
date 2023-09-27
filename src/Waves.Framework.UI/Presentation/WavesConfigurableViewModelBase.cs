@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using ReactiveUI.Fody.Helpers;
+using Waves.Framework.Core._old.Base;
 using Waves.Framework.Core.Base;
 using Waves.Framework.UI.Presentation.Interfaces.ViewModel;
 

@@ -1,4 +1,4 @@
-﻿using Waves.Framework.Core.Extensions;
+﻿using Waves.Framework.Core._old.Extensions;
 using Waves.Framework.UI.Dialogs.Enums;
 
 namespace Waves.Framework.UI.Dialogs

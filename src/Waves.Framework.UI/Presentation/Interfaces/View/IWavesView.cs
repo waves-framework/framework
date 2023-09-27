@@ -1,4 +1,4 @@
-﻿using Waves.Framework.Core.Base.Interfaces;
+﻿using Waves.Framework.Core._old.Base.Interfaces;
 
 namespace Waves.Framework.UI.Presentation.Interfaces.View
 {

@@ -1,8 +1,9 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Waves.Framework.Core._old.Base;
+using Waves.Framework.Core._old.Extensions;
 using Waves.Framework.Core.Base;
-using Waves.Framework.Core.Extensions;
-using Waves.Framework.Core.Services.Interfaces;
+using Waves.Framework.Core.Core.Interfaces;
 using Waves.Framework.UI.Base.EventArgs;
 using Waves.Framework.UI.Dialogs;
 using Waves.Framework.UI.Dialogs.Interfaces;

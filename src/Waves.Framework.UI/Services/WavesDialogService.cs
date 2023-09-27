@@ -1,8 +1,9 @@
 using Microsoft.Extensions.Logging;
+using Waves.Framework.Core._old.Base;
+using Waves.Framework.Core._old.Base.Attributes;
+using Waves.Framework.Core._old.Base.Interfaces;
+using Waves.Framework.Core._old.Extensions;
 using Waves.Framework.Core.Base;
-using Waves.Framework.Core.Base.Attributes;
-using Waves.Framework.Core.Base.Interfaces;
-using Waves.Framework.Core.Extensions;
 using Waves.Framework.UI.Dialogs;
 using Waves.Framework.UI.Dialogs.Enums;
 using Waves.Framework.UI.Dialogs.Parameters;

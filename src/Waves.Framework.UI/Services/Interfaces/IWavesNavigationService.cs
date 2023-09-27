@@ -1,4 +1,4 @@
-using Waves.Framework.Core.Base.Interfaces;
+using Waves.Framework.Core._old.Base.Interfaces;
 using Waves.Framework.UI.Base.EventArgs;
 using Waves.Framework.UI.Dialogs;
 using Waves.Framework.UI.Presentation.Interfaces.ViewModel;

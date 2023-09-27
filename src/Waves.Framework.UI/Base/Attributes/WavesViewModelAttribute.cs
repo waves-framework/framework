@@ -1,5 +1,5 @@
-﻿using Waves.Framework.Core.Base.Attributes;
-using Waves.Framework.Core.Base.Enums;
+﻿using Waves.Framework.Core._old.Base.Attributes;
+using Waves.Framework.Core._old.Base.Enums;
 
 namespace Waves.Framework.UI.Base.Attributes
 {
