@@ -1,20 +1,11 @@
-﻿using Waves.Framework.Core._old.Base.Interfaces;
-
-namespace Waves.Framework.UI.Presentation.Interfaces.ViewModel
+﻿namespace Waves.Framework.UI.Core.Interfaces
 {
     /// <summary>
     ///     Interfaces for all view models.
     /// </summary>
 #pragma warning disable SA1402 // File may only contain a single type
-    public interface IWavesViewModel :
-        IWavesObservablePlugin,
-        IWavesConfigurablePlugin
+    public interface IWavesViewModel
     {
-        /// <summary>
-        /// Gets loading state.
-        /// </summary>
-        IWavesViewModelLoadingState LoadingState { get; }
-
         /// <summary>
         ///     Actions when view appeared.
         /// </summary>
@@ -26,12 +17,6 @@ namespace Waves.Framework.UI.Presentation.Interfaces.ViewModel
         /// </summary>
         /// <returns>A <see cref="Task" /> representing the asynchronous operation.</returns>
         Task ViewDisappeared();
-
-        /// <summary>
-        /// Runs post initialization work in separate thread.
-        /// </summary>
-        /// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
-        Task RunPostInitializationAsync();
     }
 
     /// <summary>
@@ -43,14 +28,9 @@ namespace Waves.Framework.UI.Presentation.Interfaces.ViewModel
         : IWavesViewModel
     {
         /// <summary>
-        /// Event when the result approved and you want to send notification about it to the caller view model.
-        /// </summary>
-        event EventHandler ResultApproved;
-
-        /// <summary>
         ///     Gets result.
         /// </summary>
-        TResult Result { get; }
+        TResult? Result { get; }
     }
 
     /// <summary>
@@ -76,7 +56,7 @@ namespace Waves.Framework.UI.Presentation.Interfaces.ViewModel
     /// <typeparam name="TParameter">Type of parameter.</typeparam>
     /// <typeparam name="TResult">Type of result.</typeparam>
 #pragma warning disable SA1402 // File may only contain a single type
-    public interface IWavesViewModel<in TParameter, out TResult>
+    public interface IWavesParameterizedViewModel<in TParameter, out TResult>
         : IWavesParameterizedViewModel<TParameter>, IWavesViewModel<TResult>
     {
     }

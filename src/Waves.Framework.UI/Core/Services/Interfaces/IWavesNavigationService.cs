@@ -1,37 +1,13 @@
-using Waves.Framework.Core._old.Base.Interfaces;
-using Waves.Framework.UI.Base.EventArgs;
-using Waves.Framework.UI.Dialogs;
-using Waves.Framework.UI.Presentation.Interfaces.ViewModel;
+using Waves.Framework.UI.Core.EventArgs;
+using Waves.Framework.UI.Core.Interfaces;
 
-namespace Waves.Framework.UI.Services.Interfaces;
+namespace Waves.Framework.UI.Core.Services.Interfaces;
 
 /// <summary>
 ///     Interface for navigation service.
 /// </summary>
-public interface IWavesNavigationService : IWavesConfigurablePlugin
+public interface IWavesNavigationService
 {
-    /// <summary>
-    /// Events for notifying that can go back changed.
-    /// </summary>
-    event EventHandler<GoBackNavigationEventArgs> GoBackChanged;
-
-    /// <summary>
-    /// Event that fired when dialog shown.
-    /// </summary>
-    event EventHandler DialogsShown;
-
-    /// <summary>
-    /// Event that fired when all dialog hidden.
-    /// </summary>
-    event EventHandler DialogsHidden;
-
-    /// <summary>
-    /// Returns can go back in current region or not.
-    /// </summary>
-    /// <param name="region">Region name.</param>
-    /// <returns>Returns can go back or not.</returns>
-    Task<bool> CanGoBack(string region);
-
     /// <summary>
     /// Goes back on current region.
     /// </summary>
@@ -88,7 +64,7 @@ public interface IWavesNavigationService : IWavesConfigurablePlugin
     /// <param name="addToHistory">Sets whether view model needed to be add to View history.</param>
     /// <returns>A <see cref="Task" /> representing the asynchronous operation.</returns>
     Task<TResult> NavigateAsync<TParameter, TResult>(
-        IWavesViewModel<TParameter, TResult> viewModel,
+        IWavesParameterizedViewModel<TParameter, TResult> viewModel,
         TParameter parameter,
         bool addToHistory = true);
 
@@ -181,30 +157,4 @@ public interface IWavesNavigationService : IWavesConfigurablePlugin
         Type type,
         TParameter parameter,
         bool addToHistory = true);
-
-    /// <summary>
-    /// Shows open file dialog.
-    /// </summary>
-    /// <param name="filter">Filter.</param>
-    /// <returns>Returns dialog result.</returns>
-    Task<WavesOpenFileDialogResult> ShowOpenFileDialogAsync(IEnumerable<WavesFileDialogFilter> filter = null);
-
-    /// <summary>
-    /// Registers content control.
-    /// </summary>
-    /// <param name="region">Region.</param>
-    /// <param name="contentControl">Content control.</param>
-    void RegisterContentControl(string region, object contentControl);
-
-    /// <summary>
-    /// Unregisters content control.
-    /// </summary>
-    /// <param name="region">Region.</param>
-    void UnregisterContentControl(string region);
-
-    /// <summary>
-    /// Invokes pending actions.
-    /// </summary>
-    /// <param name="region">Region.</param>
-    void InvokePendingActions(string region);
 }

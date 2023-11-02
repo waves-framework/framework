@@ -1,12 +1,9 @@
-﻿using Waves.Framework.Core._old.Base.Interfaces;
-
-namespace Waves.Framework.UI.Presentation.Interfaces.View
+﻿namespace Waves.Framework.UI.Core.Interfaces
 {
     /// <summary>
     /// Interface for all views.
     /// </summary>
     public interface IWavesView :
-        IWavesInitializablePlugin,
         IDisposable
     {
         /// <summary>

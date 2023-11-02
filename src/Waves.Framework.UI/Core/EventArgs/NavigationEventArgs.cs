@@ -1,16 +1,16 @@
-namespace Waves.Framework.UI.Base.EventArgs;
+namespace Waves.Framework.UI.Core.EventArgs;
 
 /// <summary>
 /// Event arguments for can go back navigation.
 /// </summary>
-public class GoBackNavigationEventArgs : System.EventArgs
+public class NavigationEventArgs : System.EventArgs
 {
     /// <summary>
-    /// Creates new instance of <see cref="GoBackNavigationEventArgs"/>.
+    /// Creates new instance of <see cref="NavigationEventArgs"/>.
     /// </summary>
     /// <param name="canGoBack">Set whether we can navigate back.</param>
     /// <param name="contentControl">Sets content control.</param>
-    public GoBackNavigationEventArgs(
+    public NavigationEventArgs(
         bool canGoBack,
         object contentControl)
     {
