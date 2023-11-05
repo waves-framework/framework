@@ -1,9 +1,7 @@
-﻿using Microsoft.Extensions.Logging;
-using ReactiveUI;
-using ReactiveUI.Fody.Helpers;
-using Waves.Framework.UI.Core.Interfaces;
+﻿using ReactiveUI;
+using Waves.Framework.UI.Core.Presentation.Interfaces;
 
-namespace Waves.Framework.UI.Core
+namespace Waves.Framework.UI.Core.Presentation
 {
     /// <summary>
     /// Base view model.

@@ -1,5 +1,6 @@
 ﻿using Waves.Framework.Core.Attributes;
 using Waves.Framework.Core.Enums;
+using Waves.Framework.UI.Core.Presentation.Interfaces;
 
 namespace Waves.Framework.UI.Core.Attributes
 {
@@ -11,18 +12,16 @@ namespace Waves.Framework.UI.Core.Attributes
         /// <summary>
         /// Creates new instance of <see cref="WavesViewAttribute"/>.
         /// </summary>
-        /// <param name="pluginType">Plugin type.</param>
         /// <param name="lifetimeType">Lifetime.</param>
         /// <param name="key">Key.</param>
         /// <param name="name">Name.</param>
         /// <param name="region">Region.</param>
         public WavesViewAttribute(
-            Type pluginType,
+            object key,
             WavesLifetime lifetimeType = WavesLifetime.Transient,
-            object? key = null,
             string? name = default,
             string? region = "Main")
-            : base(pluginType, lifetimeType, key, name)
+            : base(typeof(IWavesView), lifetimeType, key, name)
         {
             Region = region;
         }

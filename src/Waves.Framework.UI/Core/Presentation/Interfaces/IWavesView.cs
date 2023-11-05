@@ -1,4 +1,4 @@
-﻿namespace Waves.Framework.UI.Core.Interfaces
+﻿namespace Waves.Framework.UI.Core.Presentation.Interfaces
 {
     /// <summary>
     /// Interface for all views.
@@ -9,6 +9,6 @@
         /// <summary>
         ///     Gets or sets view model context.
         /// </summary>
-        object DataContext { get; set; }
+        object? DataContext { get; set; }
     }
 }

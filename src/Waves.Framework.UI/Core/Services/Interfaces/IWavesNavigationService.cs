@@ -1,5 +1,5 @@
 using Waves.Framework.UI.Core.EventArgs;
-using Waves.Framework.UI.Core.Interfaces;
+using Waves.Framework.UI.Core.Presentation.Interfaces;
 
 namespace Waves.Framework.UI.Core.Services.Interfaces;
 

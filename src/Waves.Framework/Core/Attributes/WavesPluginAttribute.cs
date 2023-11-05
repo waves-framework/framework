@@ -35,7 +35,7 @@ public class WavesPluginAttribute : Attribute
     /// <summary>
     /// Gets name.
     /// </summary>
-    public string Name { get; }
+    public string Name { get; protected set; }
 
     /// <summary>
     ///     Gets key.

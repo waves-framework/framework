@@ -1,4 +1,4 @@
-﻿namespace Waves.Framework.UI.Core.Interfaces
+﻿namespace Waves.Framework.UI.Core.Presentation.Interfaces
 {
     /// <summary>
     ///     Interfaces for all view models.

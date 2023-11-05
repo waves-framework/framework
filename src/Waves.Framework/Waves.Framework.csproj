@@ -9,7 +9,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Autofac" Version="7.0.1" />
+        <PackageReference Include="Autofac" Version="7.1.0" />
         <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
         <PackageReference Include="Microsoft.Extensions.Configuration.CommandLine" Version="7.0.0" />
         <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="7.0.0" />
@@ -17,8 +17,8 @@
         <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
         <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="7.0.0" />
         <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-        <PackageReference Include="ReactiveUI" Version="19.4.1" />
-        <PackageReference Include="ReactiveUI.Fody" Version="19.4.1" />
+        <PackageReference Include="ReactiveUI" Version="19.5.1" />
+        <PackageReference Include="ReactiveUI.Fody" Version="19.5.1" />
     </ItemGroup>
 
 

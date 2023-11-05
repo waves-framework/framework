@@ -11,19 +11,8 @@ namespace Waves.Framework.Core.Services;
 /// </summary>
 internal class WavesServiceProvider : IWavesServiceProvider
 {
-    private readonly IContainer _container;
-    private readonly ILogger<IWavesServiceProvider> _logger;
-
-    /// <summary>
-    /// Creates new instance of <see cref="WavesServiceProvider"/>.
-    /// </summary>
-    /// <param name="container">Container.</param>
-    public WavesServiceProvider(
-        IContainer container)
-    {
-        _container = container;
-        _logger = _container.Resolve<ILogger<IWavesServiceProvider>>();
-    }
+    private IContainer _container;
+    private ILogger<IWavesServiceProvider>? _logger;
 
     /// <summary>
     /// Gets instance by type and key.
@@ -38,7 +27,7 @@ internal class WavesServiceProvider : IWavesServiceProvider
             : _container.ResolveKeyed<T>(key);
 
 #if DEBUG
-        _logger.LogDebug("{Name} resolved from container", result.GetType().GetFriendlyName());
+        _logger?.LogDebug("{Name} resolved from container", result.GetType().GetFriendlyName());
 #endif
 
         return result;
@@ -57,7 +46,7 @@ internal class WavesServiceProvider : IWavesServiceProvider
             : _container.ResolveKeyed<T>(key);
 
 #if DEBUG
-        _logger.LogDebug("{Name} resolved from container", result.GetType().GetFriendlyName());
+        _logger?.LogDebug("{Name} resolved from container", result.GetType().GetFriendlyName());
 #endif
 
         return Task.FromResult(result);
@@ -76,7 +65,7 @@ internal class WavesServiceProvider : IWavesServiceProvider
             : _container.ResolveKeyed(key, type);
 
 #if DEBUG
-        _logger.LogDebug("{Name} resolved from container", result.GetType().GetFriendlyName());
+        _logger?.LogDebug("{Name} resolved from container", result.GetType().GetFriendlyName());
 #endif
 
         return result;
@@ -95,7 +84,7 @@ internal class WavesServiceProvider : IWavesServiceProvider
             : _container.ResolveKeyed(key, type);
 
 #if DEBUG
-        _logger.LogDebug("{Name} resolved from container", result.GetType().GetFriendlyName());
+        _logger?.LogDebug("{Name} resolved from container", result.GetType().GetFriendlyName());
 #endif
 
         return Task.FromResult(result);
@@ -117,7 +106,7 @@ internal class WavesServiceProvider : IWavesServiceProvider
         foreach (var result in e)
         {
 #if DEBUG
-            _logger.LogDebug("{Name} resolved from container", result.GetType().GetFriendlyName());
+            _logger?.LogDebug("{Name} resolved from container", result.GetType().GetFriendlyName());
 #endif
         }
 
@@ -143,10 +132,16 @@ internal class WavesServiceProvider : IWavesServiceProvider
 #if DEBUG
             var stackTrace = new StackTrace(1, false);
             var type = stackTrace.GetFrame(1)?.GetMethod()?.DeclaringType;
-            _logger.LogDebug("{Type} resolved {Name} from container", type.GetFriendlyName(), result.GetType().GetFriendlyName());
+            _logger?.LogDebug("{Type} resolved {Name} from container", type.GetFriendlyName(), result.GetType().GetFriendlyName());
 #endif
         }
 
         return Task.FromResult(e.AsEnumerable());
+    }
+
+    internal void InitializeContainer(IContainer container)
+    {
+        _container = container;
+        _container.TryResolve(out _logger);
     }
 }
