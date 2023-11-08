@@ -22,4 +22,11 @@
     <ItemGroup>
       <ProjectReference Include="..\..\Waves.Framework.UI.Avalonia\Waves.Framework.UI.Avalonia.csproj" />
     </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Views\SecondPageView.axaml.cs">
+        <DependentUpon>SecondPageView.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+    </ItemGroup>
 </Project>

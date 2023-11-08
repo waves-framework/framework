@@ -1,4 +1,4 @@
-using Waves.Framework.UI.Core.Attributes;
+using Waves.Framework.UI.Attributes;
 
 namespace Waves.Framework.Sandbox.Avalonia.ViewModels;
 

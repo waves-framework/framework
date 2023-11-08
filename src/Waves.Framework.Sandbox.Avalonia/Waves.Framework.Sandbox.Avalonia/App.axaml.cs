@@ -15,23 +15,16 @@ public partial class App : WavesAvaloniaApplication
         AvaloniaXamlLoader.Load(this);
     }
 
-    public async override void OnFrameworkInitializationCompleted()
+    public override void OnFrameworkInitializationCompleted()
     {
         if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
         {
-            // desktop.MainWindow = new MainWindow
-            // {
-            //     DataContext = new MainViewModel()
-            // };
-
-            await NavigationService.NavigateAsync<MainWindowViewModel>();
+            NavigationService.Navigate<MainWindowViewModel>();
+            NavigationService.Navigate<MainPageViewModel>();
         }
         else if (ApplicationLifetime is ISingleViewApplicationLifetime singleViewPlatform)
         {
-            singleViewPlatform.MainView = new MainView
-            {
-                DataContext = new MainViewModel()
-            };
+            NavigationService.Navigate<MainPageViewModel>();
         }
 
         base.OnFrameworkInitializationCompleted();

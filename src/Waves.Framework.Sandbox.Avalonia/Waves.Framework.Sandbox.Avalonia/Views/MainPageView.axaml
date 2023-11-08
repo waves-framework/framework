@@ -1,0 +1,27 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:Waves.Framework.Sandbox.Avalonia.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Waves.Framework.Sandbox.Avalonia.Views.MainPageView"
+             x:DataType="vm:MainPageViewModel">
+    
+    <Design.DataContext>
+        <vm:MainPageViewModel />
+    </Design.DataContext>
+    
+    <Grid Margin="24,18" RowDefinitions="*,12,Auto">
+        
+        <TextBlock Grid.Row="0"
+                   Text="{Binding Greeting}"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+        
+        <Button Grid.Row="2"
+                Content="Next"
+                Command="{Binding GoNextCommand}"/>
+        
+    </Grid>
+    
+</UserControl>

@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
-using Waves.Framework.Core.Interfaces;
+using Waves.Framework.Interfaces;
 
 namespace Waves.Framework;
 

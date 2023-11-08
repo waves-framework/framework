@@ -1,6 +1,4 @@
-﻿using ReactiveUI;
-using Waves.Framework.UI.Core;
-using Waves.Framework.UI.Core.Presentation;
+﻿using Waves.Framework.UI.Presentation;
 
 namespace Waves.Framework.Sandbox.Avalonia.ViewModels;
 

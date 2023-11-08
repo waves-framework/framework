@@ -3,10 +3,10 @@ using Autofac.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Waves.Framework.Core.Attributes;
-using Waves.Framework.Core.Extensions;
-using Waves.Framework.Core.Interfaces;
-using Waves.Framework.Core.Services;
+using Waves.Framework.Attributes;
+using Waves.Framework.Extensions;
+using Waves.Framework.Interfaces;
+using Waves.Framework.Services;
 
 namespace Waves.Framework;
 

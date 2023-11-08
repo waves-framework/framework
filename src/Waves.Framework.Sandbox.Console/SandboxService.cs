@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
-using Waves.Framework.Core.Attributes;
+using Waves.Framework.Attributes;
 
 namespace Waves.Framework.Sandbox.Console;
 

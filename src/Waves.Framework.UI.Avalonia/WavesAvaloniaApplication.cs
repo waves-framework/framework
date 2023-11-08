@@ -1,6 +1,6 @@
 using Avalonia;
-using Waves.Framework.Core.Interfaces;
-using Waves.Framework.UI.Core.Services.Interfaces;
+using Waves.Framework.Interfaces;
+using Waves.Framework.UI.Services.Interfaces;
 
 namespace Waves.Framework.UI.Avalonia;
 
