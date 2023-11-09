@@ -19,12 +19,12 @@ public partial class App : WavesAvaloniaApplication
     {
         if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
         {
-            NavigationService.Navigate<MainWindowViewModel>();
-            NavigationService.Navigate<MainPageViewModel>();
+            NavigationService.NavigateAsync<MainWindowViewModel>();
+            NavigationService.NavigateAsync<MainPageViewModel>();
         }
         else if (ApplicationLifetime is ISingleViewApplicationLifetime singleViewPlatform)
         {
-            NavigationService.Navigate<MainPageViewModel>();
+            NavigationService.NavigateAsync<MainPageViewModel>();
         }
 
         base.OnFrameworkInitializationCompleted();

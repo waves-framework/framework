@@ -12,14 +12,14 @@ public interface IWavesNavigationService
     /// </summary>
     /// <param name="region">Name of region.</param>
     /// <returns>A<see cref="Task"/> representing the asynchronous operation.</returns>
-    void GoBack(string region);
+    Task GoBackAsync(string region);
 
     /// <summary>
     /// Goes back.
     /// </summary>
     /// <param name="viewModel">Instance of <see cref="IWavesViewModel"/>.</param>
     /// <returns>A<see cref="Task"/> representing the asynchronous operation.</returns>
-    void GoBack(IWavesViewModel viewModel);
+    Task GoBackAsync(IWavesViewModel viewModel);
 
     /// <summary>
     ///     Navigates to current view model.
@@ -27,7 +27,7 @@ public interface IWavesNavigationService
     /// <param name="viewModel">View model.</param>
     /// <param name="addToHistory">Sets whether view model needed to be add to View history.</param>
     /// <returns>A <see cref="Task" /> representing the asynchronous operation.</returns>
-    void Navigate(IWavesViewModel viewModel, bool addToHistory = true);
+    Task NavigateAsync(IWavesViewModel viewModel, bool addToHistory = true);
 
     /// <summary>
     ///     Navigates to current view model which returns Result.
@@ -37,7 +37,7 @@ public interface IWavesNavigationService
     /// <param name="parameter">Parameter.</param>
     /// <param name="addToHistory">Sets whether view model needed to be add to View history.</param>
     /// <returns>A <see cref="Task" /> representing the asynchronous operation.</returns>
-    void Navigate<TParameter>(
+    Task NavigateAsync<TParameter>(
         IWavesParameterizedViewModel<TParameter> viewModel,
         TParameter parameter,
         bool addToHistory = true);
@@ -49,7 +49,7 @@ public interface IWavesNavigationService
     /// <param name="viewModel">View model.</param>
     /// <param name="addToHistory">Sets whether view model needed to be add to View history.</param>
     /// <returns>A <see cref="Task" /> representing the asynchronous operation.</returns>
-    TResult Navigate<TResult>(
+    Task<TResult> NavigateAsync<TResult>(
         IWavesViewModel<TResult> viewModel,
         bool addToHistory = true);
 
@@ -62,7 +62,7 @@ public interface IWavesNavigationService
     /// <param name="parameter">Parameter.</param>
     /// <param name="addToHistory">Sets whether view model needed to be add to View history.</param>
     /// <returns>A <see cref="Task" /> representing the asynchronous operation.</returns>
-    TResult Navigate<TParameter, TResult>(
+    Task<TResult> NavigateAsync<TParameter, TResult>(
         IWavesParameterizedViewModel<TParameter, TResult> viewModel,
         TParameter parameter,
         bool addToHistory = true);
@@ -73,7 +73,7 @@ public interface IWavesNavigationService
     /// <typeparam name="T">Type of view model.</typeparam>
     /// <param name="addToHistory">Sets whether view model needed to be add to View history.</param>
     /// <returns>A <see cref="Task" /> representing the asynchronous operation.</returns>
-    void Navigate<T>(bool addToHistory = true)
+    Task NavigateAsync<T>(bool addToHistory = true)
         where T : class;
 
     /// <summary>
@@ -84,7 +84,7 @@ public interface IWavesNavigationService
     /// <param name="parameter">Parameter.</param>
     /// <param name="addToHistory">Sets whether view model needed to be add to View history.</param>
     /// <returns>A <see cref="Task" /> representing the asynchronous operation.</returns>
-    void Navigate<T, TParameter>(
+    Task NavigateAsync<T, TParameter>(
         TParameter parameter,
         bool addToHistory = true)
         where T : class;
@@ -96,7 +96,7 @@ public interface IWavesNavigationService
     /// <typeparam name="T">Type of view model.</typeparam>
     /// <typeparam name="TResult">Type of result.</typeparam>
     /// <returns>A <see cref="Task" /> representing the asynchronous operation.</returns>
-    TResult Navigate<T, TResult>(bool addToHistory = true)
+    Task<TResult> NavigateAsync<T, TResult>(bool addToHistory = true)
         where T : class;
 
     /// <summary>
@@ -108,7 +108,7 @@ public interface IWavesNavigationService
     /// <typeparam name="TParameter">Type of parameter.</typeparam>
     /// <typeparam name="TResult">Type of result..</typeparam>
     /// <returns>A <see cref="Task" /> representing the asynchronous operation.</returns>
-    TResult Navigate<T, TParameter, TResult>(
+    Task<TResult> NavigateAsync<T, TParameter, TResult>(
         TParameter parameter,
         bool addToHistory = true)
         where T : class;
@@ -119,7 +119,7 @@ public interface IWavesNavigationService
     /// <param name="type">Type of view model.</param>
     /// <param name="addToHistory">Sets whether view model needed to be add to View history.</param>
     /// <returns>A <see cref="Task" /> representing the asynchronous operation.</returns>
-    void Navigate(Type type, bool addToHistory = true);
+    Task NavigateAsync(Type type, bool addToHistory = true);
 
     /// <summary>
     ///     Navigates to view model with current type.
@@ -129,7 +129,7 @@ public interface IWavesNavigationService
     /// <param name="parameter">Parameter.</param>
     /// <param name="addToHistory">Sets whether view model needed to be add to View history.</param>
     /// <returns>A <see cref="Task" /> representing the asynchronous operation.</returns>
-    void Navigate<TParameter>(
+    Task NavigateAsync<TParameter>(
         Type type,
         TParameter parameter,
         bool addToHistory = true);
@@ -141,7 +141,7 @@ public interface IWavesNavigationService
     /// <param name="addToHistory">Sets whether view model needed to be add to View history.</param>
     /// <typeparam name="TResult">Type of result.</typeparam>
     /// <returns>A <see cref="Task" /> representing the asynchronous operation.</returns>
-    TResult Navigate<TResult>(Type type, bool addToHistory = true);
+    Task<TResult> NavigateAsync<TResult>(Type type, bool addToHistory = true);
 
     /// <summary>
     ///     Navigates to view model with Parameter with current type which returns result Result.
@@ -152,7 +152,7 @@ public interface IWavesNavigationService
     /// <typeparam name="TParameter">Type of parameter.</typeparam>
     /// <typeparam name="TResult">Type of result..</typeparam>
     /// <returns>A <see cref="Task" /> representing the asynchronous operation.</returns>
-    TResult Navigate<TParameter, TResult>(
+    Task<TResult> NavigateAsync<TParameter, TResult>(
         Type type,
         TParameter parameter,
         bool addToHistory = true);

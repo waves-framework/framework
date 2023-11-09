@@ -26,7 +26,7 @@ public class MainPageViewModel : PageViewModelBase
     
     private Task OnGoNext()
     {
-        _navigationService.Navigate<SecondPageViewModel>();
+        _navigationService.NavigateAsync<SecondPageViewModel>();
         return Task.CompletedTask;
     }
 }
