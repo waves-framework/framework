@@ -164,18 +164,18 @@ public class WavesNavigationService : IWavesNavigationService
             return;
         }
 
-        await Dispatcher.UIThread.InvokeAsync(Action);
-
         AddContentControl(region, contentControl);
-        return;
-
+        RegisterView(contentControl);
+        view.DataContext = viewModel;
+        
         void Action()
         {
             view.Show();
             _openedWindows.Add(view);
-            RegisterView(contentControl);
             _logger.LogDebug("Navigation to view {ViewType} with data context {ViewModelType} in region {Region} completed", view.GetType(), viewModel.GetType(), region);
         }
+        
+        await Dispatcher.UIThread.InvokeAsync(Action);
     }
     
     private async Task InitializePageAsync(IWavesPage<object> view, IWavesViewModel viewModel, bool addToHistory = true)
@@ -197,42 +197,24 @@ public class WavesNavigationService : IWavesNavigationService
             throw new NullReferenceException($"Region for control {view.GetType().Name} was not set");
         }
 
-        if (!_contentControls.ContainsKey(region))
+        AddToHistoryStack(region, viewModel, addToHistory);
+        var contentControl = _contentControls[region];
+        if (contentControl is WavesWindow window)
         {
-            _pendingActions.Add(region, Action);
-        }
-        else
-        {
-            await Dispatcher.UIThread.InvokeAsync(Action);
+            // window.FrontContent = null;
         }
 
-        return;
-
-        void Action()
+        if (contentControl.Content != null && contentControl.Content.GetType() == view.GetType())
         {
-            AddToHistoryStack(region, viewModel, addToHistory);
-            var contentControl = _contentControls[region];
-            if (contentControl is WavesWindow window)
-            {
-                // window.FrontContent = null;
-            }
-
-            if (contentControl.Content != null && contentControl.Content.GetType() == view.GetType())
-            {
-                return;
-            }
-
-            UnregisterView(contentControl.Content);
-            _contentControls[region].Content = view;
-            RegisterView(contentControl.Content);
-
-            // OnGoBackChanged(
-            //     new GoBackNavigationEventArgs(
-            //         Histories[region].Count > 1,
-            //         _contentControls[region]));
-
-            _logger.LogDebug("Navigation to view {ViewType} with data context {ViewModelType} in region {Region} completed", view.GetType(), viewModel.GetType(), region);
+            return;
         }
+
+        UnregisterView(contentControl.Content);
+        view.DataContext = viewModel;
+        contentControl.Content = view;
+        RegisterView(contentControl.Content);
+
+        _logger.LogDebug("Navigation to view {ViewType} with data context {ViewModelType} in region {Region} completed", view.GetType(), viewModel.GetType(), region);
     }
     
     protected async Task InitializeUserControlAsync(IWavesUserControl<object> view, IWavesViewModel viewModel, bool addToHistory = true)
