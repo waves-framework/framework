@@ -31,6 +31,18 @@
                     Height="34"
                     Margin="0,0,0,9"/>
             
+            <Canvas Height="0"
+                    Margin="0,0,0,24"/>
+            
+            <TextBlock Text="UI"
+                       Margin="0,0,0,12"/>
+            
+            <Button Content="UI Generator"
+                    HorizontalAlignment="Stretch"
+                    Command="{Binding GoToUiGeneratorCommand}"
+                    Height="34"
+                    Margin="0,0,0,9"/>
+            
         </StackPanel>
         
     </Grid>
