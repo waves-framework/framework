@@ -5,9 +5,11 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:controls="clr-namespace:Waves.Framework.UI.WPF.Controls;assembly=Waves.Framework.UI.WPF"
       xmlns:controls1="clr-namespace:Waves.Framework.Sandbox.WPF.Desktop.Views.UI.Controls"
-      mc:Ignorable="d"
-      Height="450"
-      Width="800">
+      mc:Ignorable="d">
+    
+    <controls:WavesPage.InputBindings>
+        <KeyBinding Command="{Binding GenerateCommand}" Key="Space"></KeyBinding>
+    </controls:WavesPage.InputBindings>
     
     <Grid Margin="24,18">
         
@@ -33,21 +35,21 @@
                            FontWeight="Bold"
                            Margin="0,0,0,12"/>
                 
-                <UniformGrid Columns="9"
-                             Rows="1"
-                             Height="80">
+                <ItemsControl ItemsSource="{Binding Colors}">
                     
-                    <controls1:ColorControlView/>
-                    <controls1:ColorControlView/>
-                    <controls1:ColorControlView/>
-                    <controls1:ColorControlView/>
-                    <controls1:ColorControlView/>
-                    <controls1:ColorControlView/>
-                    <controls1:ColorControlView/>
-                    <controls1:ColorControlView/>
-                    <controls1:ColorControlView/>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <controls1:TintControlView DataContext="{Binding}"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
                     
-                </UniformGrid>
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <UniformGrid Rows="5"/>
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    
+                </ItemsControl>
             
             </StackPanel>
             
