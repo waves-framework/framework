@@ -11,7 +11,7 @@
     <Grid Margin="24,18">
         
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
             <RowDefinition Height="12"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
@@ -25,37 +25,67 @@
         <Grid Grid.Column="0"
               Grid.Row="0"
               Grid.ColumnSpan="3">
-            <ScrollViewer>
-                <StackPanel>
+            
+            <ScrollViewer Margin="0,0,-24,0"
+                          VerticalScrollBarVisibility="Auto">
+                
+                <StackPanel Margin="0,0,24,0">
                     
                     <Button Content="Go To Menu"
                             Command="{Binding GoBackCommand}"
+                            HorizontalAlignment="Stretch"
+                            Height="34"
                             Margin="0,0,0,9"/>
+                    
+                    <TextBlock Text="Easy navigation to another window"
+                               Opacity="0.5"
+                               Margin="0,0,0,6"/>
                     
                     <Button Content="Navigate"
                             Command="{Binding NavigateToWindowCommand}"
+                            HorizontalAlignment="Stretch"
+                            Height="34"
                             Margin="0,0,0,9"/>
+                    
+                    <TextBlock Text="Going to a window with passing a parameter from a text field"
+                               Opacity="0.5"
+                               Margin="0,0,0,6"/>
                     
                     <Button Content="Navigate with parameter"
                             Command="{Binding NavigateToWindowWithParameterCommand}"
+                            HorizontalAlignment="Stretch"
+                            Height="34"
                             Margin="0,0,0,9"/>
+                    
+                    <TextBlock Text="Go to the window and wait for the OK button to be clicked to submit the result"
+                               Opacity="0.5"
+                               Margin="0,0,0,6"/>
                     
                     <Button Content="Navigate and wait result"
                             Command="{Binding NavigateToWindowWithResultCommand}"
+                            HorizontalAlignment="Stretch"
+                            Height="34"
                             Margin="0,0,0,9"/>
+                    
+                    <TextBlock Text="Going to a window passing a parameter from a text field and waiting for the OK button to be clicked to pass the result"
+                               Opacity="0.5"
+                               Margin="0,0,0,6"/>
                     
                     <Button Content="Navigate with parameter and wait result"
+                            Height="34"
                             Command="{Binding NavigateToWindowWithParameterAndResultCommand}"
-                            Margin="0,0,0,9"/>
+                            Margin="0,0,0,0"/>
                     
-                </StackPanel>    
+                </StackPanel>   
+                
             </ScrollViewer>
+            
         </Grid>
         
         <Grid Grid.Row="2" Grid.Column="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
-                <RowDefinition Height="12"/>
+                <RowDefinition Height="6"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <TextBlock Grid.Row="0" Text="Parameter"/>
@@ -65,7 +95,7 @@
         <Grid Grid.Row="2" Grid.Column="2">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
-                <RowDefinition Height="12"/>
+                <RowDefinition Height="6"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <TextBlock Grid.Row="0" Text="Result"/>

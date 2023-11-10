@@ -6,11 +6,24 @@
              x:Class="Waves.Framework.Sandbox.Avalonia.Views.Navigation.Controls.ResultViewUserControl"
              x:CompileBindings="False">
     
-    <Grid>
+    <Grid Margin="24, 18">
         
         <StackPanel>
-            <TextBox Text="{Binding Result}"/>
-            <Button Content="OK" Command="{Binding OkCommand}"/>
+            
+            <TextBox Text="{Binding Result}"
+                     Height="34"
+                     Margin="0,0,0,9"/>
+            
+            <Button Content="OK"
+                    Command="{Binding OkCommand}"
+                    HorizontalAlignment="Stretch"
+                    Height="34" Margin="0,0,0,9"/>
+            
+            <Button Content="Go back"
+                    Command="{Binding GoBackCommand}"
+                    Height="34"
+                    HorizontalAlignment="Stretch"/>
+            
         </StackPanel>
         
     </Grid>

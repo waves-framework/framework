@@ -25,7 +25,16 @@
                        Margin="0,0,0,12"/>
             
             <Button Content="Window"
-                    Command="{Binding GoToWindowNavigationCommand}"/>
+                    HorizontalAlignment="Stretch"
+                    Command="{Binding GoToWindowNavigationCommand}"
+                    Height="34"
+                    Margin="0,0,0,9"/>
+            
+            <Button Content="Page"
+                    HorizontalAlignment="Stretch"
+                    Command="{Binding GoToPageNavigationCommand}"
+                    Height="34"
+                    Margin="0,0,0,9"/>
             
         </StackPanel>
         

@@ -4,6 +4,7 @@ using Waves.Framework.UI.Attributes;
 using Waves.Framework.UI.Services.Interfaces;
 using Waves.Sandbox.ViewModels.Base;
 using Waves.Sandbox.ViewModels.Navigation;
+using Waves.Sandbox.ViewModels.Navigation.Page;
 using Waves.Sandbox.ViewModels.Navigation.Window;
 
 namespace Waves.Sandbox.ViewModels;
@@ -18,15 +19,24 @@ public class MainPageViewModel : PageViewModelBase
         _navigationService = navigationService;
         
         GoToWindowNavigationCommand = ReactiveCommand.CreateFromTask(OnGoToWindowNavigation);
+        GoToPageNavigationCommand = ReactiveCommand.CreateFromTask(OnGoToPageNavigation);
     }
     
     public ICommand GoNextCommand { get; private set; }
     
     public ICommand GoToWindowNavigationCommand { get; private set; }
     
+    public ICommand GoToPageNavigationCommand { get; private set; }
+    
     private Task OnGoToWindowNavigation()
     {
         _navigationService.NavigateAsync<WindowNavigationPageViewModel>();
+        return Task.CompletedTask;
+    }
+    
+    private Task OnGoToPageNavigation()
+    {
+        _navigationService.NavigateAsync<PageNavigationPageViewModel>();
         return Task.CompletedTask;
     }
 }

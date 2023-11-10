@@ -1,13 +1,13 @@
-﻿<controls:WavesPage x:Class="Waves.Framework.Sandbox.WPF.Desktop.Views.Navigation.Window.WindowNavigationPageView"
+﻿<controls:WavesPage x:Class="Waves.Framework.Sandbox.WPF.Desktop.Views.Navigation.Page.PageNavigationPageView"
            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
            xmlns:controls="clr-namespace:Waves.Framework.UI.WPF.Controls;assembly=Waves.Framework.UI.WPF"
            mc:Ignorable="d"
-           d:DesignHeight="300" d:DesignWidth="300">
+           d:DesignHeight="800" d:DesignWidth="600">
     
-   <Grid Margin="24,18">
+    <Grid Margin="24,18">
         
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"/>
@@ -36,43 +36,43 @@
                             Height="34"
                             Margin="0,0,0,9"/>
                     
-                    <TextBlock Text="Easy navigation to another window"
+                    <TextBlock Text="Easy navigation to another page"
                                Opacity="0.5"
                                Margin="0,0,0,6"/>
                     
                     <Button Content="Navigate"
-                            Command="{Binding NavigateToWindowCommand}"
+                            Command="{Binding NavigateToPageCommand}"
                             HorizontalAlignment="Stretch"
                             Height="34"
                             Margin="0,0,0,9"/>
                     
-                    <TextBlock Text="Going to a window with passing a parameter from a text field"
+                    <TextBlock Text="Going to a page with passing a parameter from a text field"
                                Opacity="0.5"
                                Margin="0,0,0,6"/>
                     
                     <Button Content="Navigate with parameter"
-                            Command="{Binding NavigateToWindowWithParameterCommand}"
+                            Command="{Binding NavigateToPageWithParameterCommand}"
                             HorizontalAlignment="Stretch"
                             Height="34"
                             Margin="0,0,0,9"/>
                     
-                    <TextBlock Text="Go to the window and wait for the OK button to be clicked to submit the result"
+                    <TextBlock Text="Go to the page and wait for the OK button to be clicked to submit the result"
                                Opacity="0.5"
                                Margin="0,0,0,6"/>
                     
                     <Button Content="Navigate and wait result"
-                            Command="{Binding NavigateToWindowWithResultCommand}"
+                            Command="{Binding NavigateToPageWithResultCommand}"
                             HorizontalAlignment="Stretch"
                             Height="34"
                             Margin="0,0,0,9"/>
                     
-                    <TextBlock Text="Going to a window passing a parameter from a text field and waiting for the OK button to be clicked to pass the result"
+                    <TextBlock Text="Going to a page passing a parameter from a text field and waiting for the OK button to be clicked to pass the result"
                                Opacity="0.5"
                                Margin="0,0,0,6"/>
                     
                     <Button Content="Navigate with parameter and wait result"
                             Height="34"
-                            Command="{Binding NavigateToWindowWithParameterAndResultCommand}"
+                            Command="{Binding NavigateToPageWithParameterAndResultCommand}"
                             Margin="0,0,0,0"/>
                     
                 </StackPanel>   

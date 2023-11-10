@@ -6,8 +6,21 @@
              x:Class="Waves.Framework.Sandbox.Avalonia.Views.Navigation.Controls.ParameterViewUserControl"
              x:CompileBindings="False">
     
-    <Grid>
-        <TextBlock Text="{Binding Parameter}"/>
+    <Grid Margin="24,18">
+        
+        <StackPanel>
+            
+            <TextBlock Text="{Binding Parameter}"
+                       Height="34"
+                       Margin="0,0,0,12"/>
+        
+            <Button Content="Go back"
+                    Command="{Binding GoBackCommand}"
+                    Height="34"
+                    HorizontalAlignment="Stretch"/>
+            
+        </StackPanel>
+        
     </Grid>
     
 </UserControl>

@@ -1,0 +1,13 @@
+<controls1:WavesPage x:Class="Waves.Framework.Sandbox.Avalonia.Views.Navigation.Page.PageNavigationWindowView"
+                     xmlns="https://github.com/avaloniaui"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                     xmlns:controls1="clr-namespace:Waves.Framework.UI.Avalonia.Controls;assembly=Waves.Framework.UI.Avalonia"
+                     xmlns:controls2="clr-namespace:Waves.Framework.Sandbox.Avalonia.Views.Navigation.Controls"
+                     mc:Ignorable="d"
+                     Height="450" Width="800">
+
+    <controls2:ParameterViewUserControl DataContext="{Binding}" />
+
+</controls1:WavesPage>

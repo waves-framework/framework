@@ -1,4 +1,4 @@
-<controls:WavesWindow x:Class="Waves.Framework.Sandbox.WPF.Desktop.Views.Navigation.Window.WindowNavigationWindowView"
+<controls:WavesWindow x:Class="Waves.Framework.Sandbox.WPF.Desktop.Views.Navigation.Window.PageNavigationWindowView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"

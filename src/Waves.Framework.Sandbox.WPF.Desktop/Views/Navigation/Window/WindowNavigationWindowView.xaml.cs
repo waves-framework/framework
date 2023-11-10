@@ -8,9 +8,9 @@ using Waves.Sandbox.ViewModels.Navigation.Window;
 namespace Waves.Framework.Sandbox.WPF.Desktop.Views.Navigation.Window;
 
 [WavesView(typeof(WindowNavigationViewModel), region: Regions.WindowNavigation)]
-public partial class WindowNavigationWindowView : WavesWindow
+public partial class PageNavigationWindowView : WavesWindow
 {
-    public WindowNavigationWindowView()
+    public PageNavigationWindowView()
     {
         InitializeComponent();
     }
