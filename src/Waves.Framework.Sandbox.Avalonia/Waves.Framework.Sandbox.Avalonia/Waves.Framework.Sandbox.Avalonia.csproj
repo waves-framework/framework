@@ -20,13 +20,12 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\Waves.Framework.Sandbox\Waves.Framework.Sandbox.csproj" />
       <ProjectReference Include="..\..\Waves.Framework.UI.Avalonia\Waves.Framework.UI.Avalonia.csproj" />
     </ItemGroup>
-
-    <ItemGroup>
-      <Compile Update="Views\SecondPageView.axaml.cs">
-        <DependentUpon>SecondPageView.axaml</DependentUpon>
-        <SubType>Code</SubType>
-      </Compile>
-    </ItemGroup>
+    
+    <PropertyGroup>
+        <AvaloniaUseCompiledBindingsByDefault>false</AvaloniaUseCompiledBindingsByDefault>
+    </PropertyGroup>
+    
 </Project>

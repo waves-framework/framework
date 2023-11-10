@@ -1,7 +1,8 @@
 using System;
 using Avalonia.Controls;
 using Avalonia.Controls.Templates;
-using Waves.Framework.Sandbox.Avalonia.ViewModels;
+using Waves.Sandbox.ViewModels;
+using Waves.Sandbox.ViewModels.Base;
 
 namespace Waves.Framework.Sandbox.Avalonia;
 

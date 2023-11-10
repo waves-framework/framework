@@ -34,7 +34,15 @@ namespace Waves.Framework.UI.Presentation
         IWavesViewModel<TResult>
     {
         /// <inheritdoc />
-        public TResult? Result { get; protected set; }
+        public event EventHandler ResultApproved;
+        
+        /// <inheritdoc />
+        public TResult Result { get; set; }
+
+        protected virtual void OnResultApproved()
+        {
+            ResultApproved?.Invoke(this, System.EventArgs.Empty);
+        }
     }
 
     /// <summary>

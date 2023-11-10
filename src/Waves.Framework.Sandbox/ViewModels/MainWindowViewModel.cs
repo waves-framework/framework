@@ -1,6 +1,7 @@
 using Waves.Framework.UI.Attributes;
+using Waves.Sandbox.ViewModels.Base;
 
-namespace Waves.Framework.Sandbox.Avalonia.ViewModels;
+namespace Waves.Sandbox.ViewModels;
 
 [WavesViewModel(typeof(MainWindowViewModel))]
 public class MainWindowViewModel : ViewModelBase

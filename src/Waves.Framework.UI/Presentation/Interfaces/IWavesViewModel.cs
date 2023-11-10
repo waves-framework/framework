@@ -28,9 +28,14 @@
         : IWavesViewModel
     {
         /// <summary>
+        ///     Result approved event handler.
+        /// </summary>
+        public event EventHandler ResultApproved;
+        
+        /// <summary>
         ///     Gets result.
         /// </summary>
-        TResult? Result { get; }
+        TResult Result { get; }
     }
 
     /// <summary>

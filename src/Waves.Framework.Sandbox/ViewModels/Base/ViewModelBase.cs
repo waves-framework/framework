@@ -1,6 +1,6 @@
 ﻿using Waves.Framework.UI.Presentation;
 
-namespace Waves.Framework.Sandbox.Avalonia.ViewModels;
+namespace Waves.Sandbox.ViewModels.Base;
 
 public class ViewModelBase : WavesViewModel
 {

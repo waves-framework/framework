@@ -1,9 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net7.0</TargetFramework>
+        <TargetFramework>net7.0-windows</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <UseWPF>true</UseWPF>
     </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Waves.Framework.UI\Waves.Framework.UI.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="ReactiveUI.WPF" Version="19.5.1" />
+    </ItemGroup>
 
 </Project>

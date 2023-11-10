@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Waves.Sandbox</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Waves.Framework.UI\Waves.Framework.UI.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="RandomDataGenerator.Net" Version="1.0.17" />
+        <PackageReference Include="ReactiveUI" Version="19.5.1" />
+        <PackageReference Include="ReactiveUI.Fody" Version="19.5.1" />
+    </ItemGroup>
+
+
+
+</Project>

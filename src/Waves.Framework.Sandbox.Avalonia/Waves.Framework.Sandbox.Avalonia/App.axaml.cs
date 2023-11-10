@@ -1,9 +1,9 @@
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 using Microsoft.Extensions.Logging;
-using Waves.Framework.Sandbox.Avalonia.ViewModels;
 using Waves.Framework.Sandbox.Avalonia.Views;
 using Waves.Framework.UI.Avalonia;
+using Waves.Sandbox.ViewModels;
 
 namespace Waves.Framework.Sandbox.Avalonia;
 

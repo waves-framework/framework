@@ -17,4 +17,5 @@
       <ProjectReference Include="..\Waves.Framework.UI\Waves.Framework.UI.csproj" />
     </ItemGroup>
 
+
 </Project>
