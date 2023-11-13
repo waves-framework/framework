@@ -2,7 +2,7 @@ using System;
 using System.Globalization;
 using System.Windows.Data;
 using System.Windows.Media;
-using Waves.Sandbox.Model.Color;
+using Waves.Sandbox.ViewModels.UI.Color;
 
 namespace Waves.Framework.Sandbox.WPF.Desktop.Views.UI.Converters;
 

@@ -4,5 +4,6 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:controls="clr-namespace:Waves.Framework.UI.WPF.Controls;assembly=Waves.Framework.UI.WPF"
+             Background="{DynamicResource Primary-Light-Brush-100}"
              mc:Ignorable="d"
              Title="MainWindow" Height="450" Width="800"/>

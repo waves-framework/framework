@@ -1,6 +1,15 @@
 ﻿<wpf:WavesWpfApplication x:Class="Waves.Framework.Sandbox.WPF.Desktop.App"
                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                     xmlns:wpf="clr-namespace:Waves.Framework.UI.WPF;assembly=Waves.Framework.UI.WPF">
+                     xmlns:wpf="clr-namespace:Waves.Framework.UI.WPF;assembly=Waves.Framework.UI.WPF"
+                     xmlns:styles="clr-namespace:Waves.Framework.UI.WPF.Styles;assembly=Waves.Framework.UI.WPF">
+    
+    <wpf:WavesWpfApplication.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <styles:WavesResourceDictionary Source="pack://application:,,,/Waves.Framework.Sandbox.WPF.Desktop;component/Styles/Colors.xaml"/>
+            </ResourceDictionary.MergedDictionaries>    
+        </ResourceDictionary>
+    </wpf:WavesWpfApplication.Resources>
 
 </wpf:WavesWpfApplication>

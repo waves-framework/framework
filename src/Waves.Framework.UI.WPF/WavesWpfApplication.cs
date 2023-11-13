@@ -1,10 +1,12 @@
 ﻿using System.Windows;
+using Microsoft.Extensions.DependencyInjection;
 using Waves.Framework.Interfaces;
+using Waves.Framework.UI.Interfaces;
 using Waves.Framework.UI.Services.Interfaces;
 
 namespace Waves.Framework.UI.WPF;
 
-public class WavesWpfApplication : Application
+public class WavesWpfApplication : Application, IWavesUiApplication
 {
     /// <summary>
     /// Gets <see cref="WavesApplication"/>.
@@ -28,5 +30,6 @@ public class WavesWpfApplication : Application
     
     protected virtual void ConfigureServices(WavesApplicationBuilder builder)
     {
+        builder.Services.AddSingleton<IWavesUiApplication>(this);
     }
 }

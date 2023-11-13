@@ -1,4 +1,4 @@
-namespace Waves.Sandbox.Model.Color;
+namespace Waves.Sandbox.Model.API.Color;
 
 public class ColormindApiResponse
 {

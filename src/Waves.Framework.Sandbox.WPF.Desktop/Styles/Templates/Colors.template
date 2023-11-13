@@ -1,0 +1,108 @@
+<styles:WavesResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                                xmlns:styles="clr-namespace:Waves.Framework.UI.WPF.Styles;assembly=Waves.Framework.UI.WPF"
+                                xmlns:system="clr-namespace:System;assembly=System.Runtime">
+                                
+    <system:String x:Key="Key">ResourceDictionaryColors</system:String>
+
+    <Color x:Key="Primary-Light-100">{{primary_light_100}}</Color>
+    <Color x:Key="Primary-Light-200">{{primary_light_200}}</Color>
+    <Color x:Key="Primary-Light-300">{{primary_light_300}}</Color>
+    <Color x:Key="Primary-Light-400">{{primary_light_400}}</Color>
+    <Color x:Key="Primary-Light-500">{{primary_light_500}}</Color>
+    <Color x:Key="Primary-Light-600">{{primary_light_600}}</Color>
+    <Color x:Key="Primary-Light-700">{{primary_light_700}}</Color>
+    <Color x:Key="Primary-Light-800">{{primary_light_800}}</Color>
+    <Color x:Key="Primary-Light-900">{{primary_light_900}}</Color>
+    
+    <Color x:Key="Primary-Dark-100">{{primary_dark_100}}</Color>
+    <Color x:Key="Primary-Dark-200">{{primary_dark_200}}</Color>
+    <Color x:Key="Primary-Dark-300">{{primary_dark_300}}</Color>
+    <Color x:Key="Primary-Dark-400">{{primary_dark_400}}</Color>
+    <Color x:Key="Primary-Dark-500">{{primary_dark_500}}</Color>
+    <Color x:Key="Primary-Dark-600">{{primary_dark_600}}</Color>
+    <Color x:Key="Primary-Dark-700">{{primary_dark_700}}</Color>
+    <Color x:Key="Primary-Dark-800">{{primary_dark_800}}</Color>
+    <Color x:Key="Primary-Dark-900">{{primary_dark_900}}</Color>
+    
+    <Color x:Key="Accent-1-100">{{accent_1_100}}</Color>
+    <Color x:Key="Accent-1-200">{{accent_1_200}}</Color>
+    <Color x:Key="Accent-1-300">{{accent_1_300}}</Color>
+    <Color x:Key="Accent-1-400">{{accent_1_400}}</Color>
+    <Color x:Key="Accent-1-500">{{accent_1_500}}</Color>
+    <Color x:Key="Accent-1-600">{{accent_1_600}}</Color>
+    <Color x:Key="Accent-1-700">{{accent_1_700}}</Color>
+    <Color x:Key="Accent-1-800">{{accent_1_800}}</Color>
+    <Color x:Key="Accent-1-900">{{accent_1_900}}</Color>
+    
+    <Color x:Key="Accent-2-100">{{accent_2_100}}</Color>
+    <Color x:Key="Accent-2-200">{{accent_2_200}}</Color>
+    <Color x:Key="Accent-2-300">{{accent_2_300}}</Color>
+    <Color x:Key="Accent-2-400">{{accent_2_400}}</Color>
+    <Color x:Key="Accent-2-500">{{accent_2_500}}</Color>
+    <Color x:Key="Accent-2-600">{{accent_2_600}}</Color>
+    <Color x:Key="Accent-2-700">{{accent_2_700}}</Color>
+    <Color x:Key="Accent-2-800">{{accent_2_800}}</Color>
+    <Color x:Key="Accent-2-900">{{accent_2_900}}</Color>
+    
+    <Color x:Key="Accent-3-100">{{accent_3_100}}</Color>
+    <Color x:Key="Accent-3-200">{{accent_3_200}}</Color>
+    <Color x:Key="Accent-3-300">{{accent_3_300}}</Color>
+    <Color x:Key="Accent-3-400">{{accent_3_400}}</Color>
+    <Color x:Key="Accent-3-500">{{accent_3_500}}</Color>
+    <Color x:Key="Accent-3-600">{{accent_3_600}}</Color>
+    <Color x:Key="Accent-3-700">{{accent_3_700}}</Color>
+    <Color x:Key="Accent-3-800">{{accent_3_800}}</Color>
+    <Color x:Key="Accent-3-900">{{accent_3_900}}</Color>
+    
+    <SolidColorBrush x:Key="Primary-Light-Brush-100" Color="{StaticResource Primary-Light-100}"/>
+    <SolidColorBrush x:Key="Primary-Light-Brush-200" Color="{StaticResource Primary-Light-200}"/>
+    <SolidColorBrush x:Key="Primary-Light-Brush-300" Color="{StaticResource Primary-Light-300}"/>
+    <SolidColorBrush x:Key="Primary-Light-Brush-400" Color="{StaticResource Primary-Light-400}"/>
+    <SolidColorBrush x:Key="Primary-Light-Brush-500" Color="{StaticResource Primary-Light-500}"/>
+    <SolidColorBrush x:Key="Primary-Light-Brush-600" Color="{StaticResource Primary-Light-600}"/>
+    <SolidColorBrush x:Key="Primary-Light-Brush-700" Color="{StaticResource Primary-Light-700}"/>
+    <SolidColorBrush x:Key="Primary-Light-Brush-800" Color="{StaticResource Primary-Light-800}"/>
+    <SolidColorBrush x:Key="Primary-Light-Brush-900" Color="{StaticResource Primary-Light-900}"/>
+    
+    <SolidColorBrush x:Key="Primary-Dark-Brush-100" Color="{StaticResource Primary-Dark-100}"/>
+    <SolidColorBrush x:Key="Primary-Dark-Brush-200" Color="{StaticResource Primary-Dark-200}"/>
+    <SolidColorBrush x:Key="Primary-Dark-Brush-300" Color="{StaticResource Primary-Dark-300}"/>
+    <SolidColorBrush x:Key="Primary-Dark-Brush-400" Color="{StaticResource Primary-Dark-400}"/>
+    <SolidColorBrush x:Key="Primary-Dark-Brush-500" Color="{StaticResource Primary-Dark-500}"/>
+    <SolidColorBrush x:Key="Primary-Dark-Brush-600" Color="{StaticResource Primary-Dark-600}"/>
+    <SolidColorBrush x:Key="Primary-Dark-Brush-700" Color="{StaticResource Primary-Dark-700}"/>
+    <SolidColorBrush x:Key="Primary-Dark-Brush-800" Color="{StaticResource Primary-Dark-800}"/>
+    <SolidColorBrush x:Key="Primary-Dark-Brush-900" Color="{StaticResource Primary-Dark-900}"/>
+    
+    <SolidColorBrush x:Key="Accent-1-Brush-100" Color="{StaticResource Accent-1-100}"/>
+    <SolidColorBrush x:Key="Accent-1-Brush-200" Color="{StaticResource Accent-1-200}"/>
+    <SolidColorBrush x:Key="Accent-1-Brush-300" Color="{StaticResource Accent-1-300}"/>
+    <SolidColorBrush x:Key="Accent-1-Brush-400" Color="{StaticResource Accent-1-400}"/>
+    <SolidColorBrush x:Key="Accent-1-Brush-500" Color="{StaticResource Accent-1-500}"/>
+    <SolidColorBrush x:Key="Accent-1-Brush-600" Color="{StaticResource Accent-1-600}"/>
+    <SolidColorBrush x:Key="Accent-1-Brush-700" Color="{StaticResource Accent-1-700}"/>
+    <SolidColorBrush x:Key="Accent-1-Brush-800" Color="{StaticResource Accent-1-800}"/>
+    <SolidColorBrush x:Key="Accent-1-Brush-900" Color="{StaticResource Accent-1-900}"/>
+    
+    <SolidColorBrush x:Key="Accent-2-Brush-100" Color="{StaticResource Accent-2-100}"/>
+    <SolidColorBrush x:Key="Accent-2-Brush-200" Color="{StaticResource Accent-2-200}"/>
+    <SolidColorBrush x:Key="Accent-2-Brush-300" Color="{StaticResource Accent-2-300}"/>
+    <SolidColorBrush x:Key="Accent-2-Brush-400" Color="{StaticResource Accent-2-400}"/>
+    <SolidColorBrush x:Key="Accent-2-Brush-500" Color="{StaticResource Accent-2-500}"/>
+    <SolidColorBrush x:Key="Accent-2-Brush-600" Color="{StaticResource Accent-2-600}"/>
+    <SolidColorBrush x:Key="Accent-2-Brush-700" Color="{StaticResource Accent-2-700}"/>
+    <SolidColorBrush x:Key="Accent-2-Brush-800" Color="{StaticResource Accent-2-800}"/>
+    <SolidColorBrush x:Key="Accent-2-Brush-900" Color="{StaticResource Accent-2-900}"/>
+    
+    <SolidColorBrush x:Key="Accent-3-Brush-100" Color="{StaticResource Accent-3-100}"/>
+    <SolidColorBrush x:Key="Accent-3-Brush-200" Color="{StaticResource Accent-3-200}"/>
+    <SolidColorBrush x:Key="Accent-3-Brush-300" Color="{StaticResource Accent-3-300}"/>
+    <SolidColorBrush x:Key="Accent-3-Brush-400" Color="{StaticResource Accent-3-400}"/>
+    <SolidColorBrush x:Key="Accent-3-Brush-500" Color="{StaticResource Accent-3-500}"/>
+    <SolidColorBrush x:Key="Accent-3-Brush-600" Color="{StaticResource Accent-3-600}"/>
+    <SolidColorBrush x:Key="Accent-3-Brush-700" Color="{StaticResource Accent-3-700}"/>
+    <SolidColorBrush x:Key="Accent-3-Brush-800" Color="{StaticResource Accent-3-800}"/>
+    <SolidColorBrush x:Key="Accent-3-Brush-900" Color="{StaticResource Accent-3-900}"/>
+    
+</styles:WavesResourceDictionary>

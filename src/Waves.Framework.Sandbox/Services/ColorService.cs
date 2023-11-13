@@ -1,6 +1,7 @@
 using RestSharp;
 using Waves.Framework.Attributes;
-using Waves.Sandbox.Model.Color;
+using Waves.Sandbox.Model.API.Color;
+using Waves.Sandbox.ViewModels.UI.Color;
 
 namespace Waves.Sandbox.Services;
 
@@ -33,14 +34,14 @@ public class ColorService
         }
     }
 
-    public Task<GeneratorColorTints> GenerateTints(List<int> color)
+    public Task<GeneratorColorTintsList> GenerateTints(List<int> color)
     {
         if (color.Count != 3)
         {
             throw new Exception("Wrong input");
         }
 
-        var result = new GeneratorColorTints();
+        var result = new GeneratorColorTintsList();
 
         var red = color[0];
         var green = color[1];
@@ -51,7 +52,7 @@ public class ColorService
         var brightness = (int)Math.Sqrt(red * red * 0.299 + green * green * 0.587 + blue * blue * 0.114);
 
         // Calculate the step size for tint calculation
-        var step = brightness <= 128 ? -brightness / (_numberOfTints + 1) : (255 - brightness) / (_numberOfTints + 1);
+        var step = brightness >= 128 ? -brightness / (_numberOfTints + 1) : (255 - brightness) / (_numberOfTints + 1);
 
         for (var i = 1; i <= _numberOfTints; i++)
         {
