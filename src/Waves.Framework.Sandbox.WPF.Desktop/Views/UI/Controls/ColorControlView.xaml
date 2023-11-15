@@ -9,7 +9,7 @@
              d:DesignHeight="300" d:DesignWidth="300">
     
     <UserControl.Resources>
-        <converters:GeneratorColorToSolidColorBrushConverter x:Key="GeneratorColorToSolidColorBrushConverter"/>
+        <converters:WavesColorToSolidColorBrushConverter x:Key="GeneratorColorToSolidColorBrushConverter"/>
     </UserControl.Resources>
     
     <Grid Margin="12,0">

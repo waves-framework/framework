@@ -38,18 +38,18 @@ public class WavesThemeService : IWavesThemeService
         {
             try
             {
-                var wavesResourceDictionary = (WavesResourceDictionary)resource;
-                if (wavesResourceDictionary == null)
+                var currentDictionary = (WavesResourceDictionary)resource;
+                if (currentDictionary == null)
                 {
                     continue;
                 }
 
-                var oldKey = (string)wavesResourceDictionary["Key"];
-                var newKey = (string)newResourceDictionary["Key"];
+                var oldKey = (string)currentDictionary["Key"] ?? throw new InvalidOperationException();
+                var newKey = (string)newResourceDictionary["Key"] ?? throw new InvalidOperationException();
 
                 if (oldKey == newKey)
                 {
-                    oldResourceDictionary = wavesResourceDictionary;
+                    oldResourceDictionary = currentDictionary;
                     break;
                 }
             }
@@ -61,10 +61,12 @@ public class WavesThemeService : IWavesThemeService
             
         }
 
-        if (oldResourceDictionary != null)
+        if (oldResourceDictionary == null)
         {
-            app.Resources.MergedDictionaries.Remove((ResourceDictionary)oldResourceDictionary);
-            app.Resources.MergedDictionaries.Add(newResourceDictionary);
+            return;
         }
+        
+        app.Resources.MergedDictionaries.Remove(oldResourceDictionary);
+        app.Resources.MergedDictionaries.Add(newResourceDictionary);
     }
 }

@@ -2,15 +2,16 @@ using System;
 using System.Globalization;
 using System.Windows.Data;
 using System.Windows.Media;
+using Waves.Sandbox.Model.Color;
 using Waves.Sandbox.ViewModels.UI.Color;
 
 namespace Waves.Framework.Sandbox.WPF.Desktop.Views.UI.Converters;
 
-public class GeneratorColorToSolidColorBrushConverter : IValueConverter
+public class WavesColorToSolidColorBrushConverter : IValueConverter
 {
     public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
     {
-        if (value is not GeneratorColor color)
+        if (value is not WavesColor color)
         {
             throw new Exception("Wrong input");
         }
