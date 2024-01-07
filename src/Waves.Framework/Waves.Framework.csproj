@@ -6,6 +6,11 @@
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <Title>Waves.Framework</Title>
+        <Authors>Egor Khindikaynen</Authors>
+        <Description>Work in progress</Description>
+        <Copyright>Copyright (c) 2020-2024 Egor Khindikaynen</Copyright>
+        <PackageTags>waves framework</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>
