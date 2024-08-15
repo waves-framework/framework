@@ -19,7 +19,13 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Waves.Framework.UI\Waves.Framework.UI.csproj" />
+      <ProjectReference Include="..\Waves.Framework\Waves.Framework.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="SukiUI">
+        <HintPath>..\..\bin\SukiUI.dll</HintPath>
+      </Reference>
     </ItemGroup>
 
 

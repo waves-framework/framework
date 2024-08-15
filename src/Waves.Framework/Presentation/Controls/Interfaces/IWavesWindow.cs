@@ -1,4 +1,4 @@
-namespace Waves.Framework.UI.Presentation.Controls.Interfaces
+namespace Waves.Framework.Presentation.Controls.Interfaces
 {
     /// <summary>
     /// Interface for window controls.

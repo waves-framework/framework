@@ -1,4 +1,4 @@
-﻿namespace Waves.Framework.UI.Presentation.Interfaces
+﻿namespace Waves.Framework.Presentation.Interfaces
 {
     /// <summary>
     /// Interface for all views.

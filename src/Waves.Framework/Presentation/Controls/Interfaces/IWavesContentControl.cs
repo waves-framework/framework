@@ -1,6 +1,6 @@
-using Waves.Framework.UI.Presentation.Interfaces;
+using Waves.Framework.Presentation.Interfaces;
 
-namespace Waves.Framework.UI.Presentation.Controls.Interfaces
+namespace Waves.Framework.Presentation.Controls.Interfaces
 {
     /// <summary>
     /// Interface for content controls.

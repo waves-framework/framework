@@ -1,10 +1,10 @@
-namespace Waves.Framework.UI.Presentation.Controls.Interfaces
+namespace Waves.Framework.Presentation.Controls.Interfaces
 {
     /// <summary>
-    /// Interface for pages.
+    /// Interface for user controls.
     /// </summary>
     /// <typeparam name="TContent">Type of content.</typeparam>
-    public interface IWavesPage<TContent> :
+    public interface IWavesUserControl<TContent> :
         IWavesContentControl<TContent>
     {
     }

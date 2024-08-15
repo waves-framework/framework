@@ -1,11 +1,11 @@
 ﻿using Microsoft.Extensions.Logging;
+using Waves.Framework.Extensions;
 using Waves.Framework.Interfaces;
-using Waves.Framework.UI.Extensions;
-using Waves.Framework.UI.Presentation.Controls.Interfaces;
-using Waves.Framework.UI.Presentation.Interfaces;
-using Waves.Framework.UI.Services.Interfaces;
+using Waves.Framework.Presentation.Controls.Interfaces;
+using Waves.Framework.Presentation.Interfaces;
+using Waves.Framework.Services.Interfaces;
 
-namespace Waves.Framework.UI.Services;
+namespace Waves.Framework.Services;
 
 public abstract class WavesNavigationServiceBase<TContent> : IWavesNavigationService
 {

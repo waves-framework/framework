@@ -1,4 +1,4 @@
-namespace Waves.Framework.UI.Interfaces;
+namespace Waves.Framework.Interfaces;
 
 public interface IWavesUiApplication
 {

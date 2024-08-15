@@ -1,8 +1,8 @@
 using Avalonia;
 using Microsoft.Extensions.DependencyInjection;
 using Waves.Framework.Interfaces;
+using Waves.Framework.Services.Interfaces;
 using Waves.Framework.UI.Avalonia.Services;
-using Waves.Framework.UI.Services.Interfaces;
 
 namespace Waves.Framework.UI.Avalonia;
 

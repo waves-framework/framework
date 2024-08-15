@@ -1,6 +1,6 @@
-﻿using Waves.Framework.UI.Interfaces;
+﻿using Waves.Framework.Interfaces;
 
-namespace Waves.Framework.UI.Services.Interfaces;
+namespace Waves.Framework.Services.Interfaces;
 
 public interface IWavesThemeService
 {

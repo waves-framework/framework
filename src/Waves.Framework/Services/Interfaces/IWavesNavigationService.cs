@@ -1,6 +1,6 @@
-using Waves.Framework.UI.Presentation.Interfaces;
+using Waves.Framework.Presentation.Interfaces;
 
-namespace Waves.Framework.UI.Services.Interfaces;
+namespace Waves.Framework.Services.Interfaces;
 
 /// <summary>
 ///     Interface for navigation service.

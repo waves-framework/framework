@@ -1,4 +1,4 @@
-namespace Waves.Framework.UI.EventArgs;
+namespace Waves.Framework.EventArgs;
 
 /// <summary>
 /// Event arguments for can go back navigation.

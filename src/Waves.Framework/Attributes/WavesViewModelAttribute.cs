@@ -1,7 +1,6 @@
-﻿using Waves.Framework.Attributes;
-using Waves.Framework.Enums;
+﻿using Waves.Framework.Enums;
 
-namespace Waves.Framework.UI.Attributes
+namespace Waves.Framework.Attributes
 {
     /// <summary>
     /// Attribute for all view models.

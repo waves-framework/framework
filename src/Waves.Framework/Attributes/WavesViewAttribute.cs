@@ -1,8 +1,7 @@
-﻿using Waves.Framework.Attributes;
-using Waves.Framework.Enums;
-using Waves.Framework.UI.Presentation.Interfaces;
+﻿using Waves.Framework.Enums;
+using Waves.Framework.Presentation.Interfaces;
 
-namespace Waves.Framework.UI.Attributes
+namespace Waves.Framework.Attributes
 {
     /// <summary>
     /// Attribute for all views.

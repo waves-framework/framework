@@ -1,7 +1,7 @@
 ﻿using ReactiveUI;
-using Waves.Framework.UI.Presentation.Interfaces;
+using Waves.Framework.Presentation.Interfaces;
 
-namespace Waves.Framework.UI.Presentation
+namespace Waves.Framework.Presentation
 {
     /// <summary>
     /// Base view model.

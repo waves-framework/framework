@@ -6,11 +6,11 @@ using Microsoft.Extensions.Logging;
 using Waves.Framework.Attributes;
 using Waves.Framework.Enums;
 using Waves.Framework.Interfaces;
+using Waves.Framework.Presentation.Controls.Interfaces;
+using Waves.Framework.Presentation.Interfaces;
+using Waves.Framework.Services;
+using Waves.Framework.Services.Interfaces;
 using Waves.Framework.UI.Avalonia.Controls;
-using Waves.Framework.UI.Presentation.Controls.Interfaces;
-using Waves.Framework.UI.Presentation.Interfaces;
-using Waves.Framework.UI.Services;
-using Waves.Framework.UI.Services.Interfaces;
 
 namespace Waves.Framework.UI.Avalonia.Services;
 

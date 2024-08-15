@@ -1,7 +1,7 @@
-﻿using Waves.Framework.UI.Attributes;
-using Waves.Framework.UI.Presentation.Interfaces;
+﻿using Waves.Framework.Attributes;
+using Waves.Framework.Presentation.Interfaces;
 
-namespace Waves.Framework.UI.Extensions
+namespace Waves.Framework.Extensions
 {
     /// <summary>
     /// Extensions for Waves Views.
