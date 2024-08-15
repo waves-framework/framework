@@ -56,7 +56,7 @@ internal static class AssemblyExtensions
 
                 if (!hasItem)
                 {
-#if NET6_0 || NET7_0
+#if NET6_0_OR_GREATER
                         assemblies.Add(AssemblyLoadContext.Default.LoadFromAssemblyPath(file));
 #elif NETSTANDARD2_0 || NET462
                     assemblies.Add(Assembly.LoadFile(file));
