@@ -3,7 +3,7 @@ using System.IO;
 using System.Text;
 using System.Windows.Markup;
 using Waves.Framework.Attributes;
-using Waves.Framework.UI.Interfaces;
+using Waves.Framework.Interfaces;
 using Waves.Framework.UI.WPF.Styles;
 using Waves.Sandbox.Services.Interfaces;
 

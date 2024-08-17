@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Waves.Framework", "src\Waves.Framework\Waves.Framework.csproj", "{035D4E1B-CD76-4E3E-8B5E-D7688F084E08}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Waves.Framework.Sandbox.Console", "src\Waves.Framework.Sandbox.Console\Waves.Framework.Sandbox.Console.csproj", "{AA305599-F3A6-4D2A-A7E9-7B2B0501F6E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{9F8639D3-02AE-4E48-92A5-8ABC83711EEE}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sandbox", "Sandbox", "{40C7D322-800E-4047-AB89-63EE887CC558}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console", "Console", "{52D86F05-56C7-4573-AF04-48431532F68E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Waves.Framework.Sandbox", "src\Waves.Framework.Sandbox\Waves.Framework.Sandbox.csproj", "{12755002-2E1E-4E4E-AC88-1B9BD1E0DDBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Waves.Framework.UI.WPF", "src\Waves.Framework.UI.WPF\Waves.Framework.UI.WPF.csproj", "{E48B17EB-0113-4D02-9C75-36B68D194688}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WPF", "WPF", "{8741CE6F-1593-40F6-AED2-B0AF742206C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Waves.Framework.Sandbox.WPF.Desktop", "src\Waves.Framework.Sandbox.WPF.Desktop\Waves.Framework.Sandbox.WPF.Desktop.csproj", "{9ACE01C5-BBBF-48A0-881C-0D7E9ED8A8EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{035D4E1B-CD76-4E3E-8B5E-D7688F084E08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{035D4E1B-CD76-4E3E-8B5E-D7688F084E08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{035D4E1B-CD76-4E3E-8B5E-D7688F084E08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{035D4E1B-CD76-4E3E-8B5E-D7688F084E08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA305599-F3A6-4D2A-A7E9-7B2B0501F6E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA305599-F3A6-4D2A-A7E9-7B2B0501F6E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA305599-F3A6-4D2A-A7E9-7B2B0501F6E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA305599-F3A6-4D2A-A7E9-7B2B0501F6E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12755002-2E1E-4E4E-AC88-1B9BD1E0DDBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12755002-2E1E-4E4E-AC88-1B9BD1E0DDBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12755002-2E1E-4E4E-AC88-1B9BD1E0DDBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12755002-2E1E-4E4E-AC88-1B9BD1E0DDBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E48B17EB-0113-4D02-9C75-36B68D194688}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E48B17EB-0113-4D02-9C75-36B68D194688}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E48B17EB-0113-4D02-9C75-36B68D194688}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E48B17EB-0113-4D02-9C75-36B68D194688}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ACE01C5-BBBF-48A0-881C-0D7E9ED8A8EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ACE01C5-BBBF-48A0-881C-0D7E9ED8A8EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ACE01C5-BBBF-48A0-881C-0D7E9ED8A8EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ACE01C5-BBBF-48A0-881C-0D7E9ED8A8EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AA305599-F3A6-4D2A-A7E9-7B2B0501F6E8} = {52D86F05-56C7-4573-AF04-48431532F68E}
+		{52D86F05-56C7-4573-AF04-48431532F68E} = {40C7D322-800E-4047-AB89-63EE887CC558}
+		{12755002-2E1E-4E4E-AC88-1B9BD1E0DDBF} = {40C7D322-800E-4047-AB89-63EE887CC558}
+		{8741CE6F-1593-40F6-AED2-B0AF742206C3} = {40C7D322-800E-4047-AB89-63EE887CC558}
+		{9ACE01C5-BBBF-48A0-881C-0D7E9ED8A8EB} = {8741CE6F-1593-40F6-AED2-B0AF742206C3}
+	EndGlobalSection
+EndGlobal

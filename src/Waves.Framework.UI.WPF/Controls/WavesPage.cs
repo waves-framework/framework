@@ -1,5 +1,5 @@
 using System.Windows.Controls;
-using Waves.Framework.UI.Presentation.Controls.Interfaces;
+using Waves.Framework.Presentation.Controls.Interfaces;
 
 namespace Waves.Framework.UI.WPF.Controls;
 

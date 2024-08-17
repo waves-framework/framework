@@ -5,25 +5,25 @@
     
     <system:String x:Key="Key">ResourceDictionaryColors</system:String>
     
-    <Color x:Key="Primary-100">#FCFBFD</Color>
-    <Color x:Key="Primary-200">#F4F3F6</Color>
-    <Color x:Key="Primary-300">#EEEDF0</Color>
-    <Color x:Key="Primary-400">#DFDDE1</Color>
-    <Color x:Key="Primary-500">#D8D7DB</Color>
-    <Color x:Key="Primary-600">#D0CFD4</Color>
-    <Color x:Key="Primary-700">#C9C8CD</Color>
-    <Color x:Key="Primary-800">#C2C1C7</Color>
-    <Color x:Key="Primary-900">#BBBAC0</Color>
+    <Color x:Key="Primary-Light-100">#FCFBFD</Color>
+    <Color x:Key="Primary-Light-200">#F4F3F6</Color>
+    <Color x:Key="Primary-Light-300">#EEEDF0</Color>
+    <Color x:Key="Primary-Light-400">#DFDDE1</Color>
+    <Color x:Key="Primary-Light-500">#D8D7DB</Color>
+    <Color x:Key="Primary-Light-600">#D0CFD4</Color>
+    <Color x:Key="Primary-Light-700">#C9C8CD</Color>
+    <Color x:Key="Primary-Light-800">#C2C1C7</Color>
+    <Color x:Key="Primary-Light-900">#BBBAC0</Color>
     
-    <!-- <Color x:Key="Primary-Dark-100">#0D0C1D</Color> -->
-    <!-- <Color x:Key="Primary-Dark-200">#0F0E20</Color> -->
-    <!-- <Color x:Key="Primary-Dark-300">#121122</Color> -->
-    <!-- <Color x:Key="Primary-Dark-400">#171627</Color> -->
-    <!-- <Color x:Key="Primary-Dark-500">#1C1B2C</Color> -->
-    <!-- <Color x:Key="Primary-Dark-600">#211F37</Color> -->
-    <!-- <Color x:Key="Primary-Dark-700">#242244</Color> -->
-    <!-- <Color x:Key="Primary-Dark-800">#2C295B</Color> -->
-    <!-- <Color x:Key="Primary-Dark-900">#39357E</Color> -->
+    <Color x:Key="Primary-Dark-100">#0D0C1D</Color>
+    <Color x:Key="Primary-Dark-200">#0F0E20</Color>
+    <Color x:Key="Primary-Dark-300">#121122</Color>
+    <Color x:Key="Primary-Dark-400">#171627</Color>
+    <Color x:Key="Primary-Dark-500">#1C1B2C</Color>
+    <Color x:Key="Primary-Dark-600">#211F37</Color>
+    <Color x:Key="Primary-Dark-700">#242244</Color>
+    <Color x:Key="Primary-Dark-800">#2C295B</Color>
+    <Color x:Key="Primary-Dark-900">#39357E</Color>
     
     <Color x:Key="Accent-1-100">#E8E8ED</Color>
     <Color x:Key="Accent-1-200">#D1D1DB</Color>

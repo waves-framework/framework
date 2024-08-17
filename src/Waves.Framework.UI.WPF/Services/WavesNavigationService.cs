@@ -1,15 +1,14 @@
-﻿using System.Net.Mime;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Threading;
 using Microsoft.Extensions.Logging;
 using Waves.Framework.Attributes;
 using Waves.Framework.Enums;
 using Waves.Framework.Interfaces;
-using Waves.Framework.UI.Presentation.Controls.Interfaces;
-using Waves.Framework.UI.Presentation.Interfaces;
-using Waves.Framework.UI.Services;
-using Waves.Framework.UI.Services.Interfaces;
+using Waves.Framework.Presentation.Controls.Interfaces;
+using Waves.Framework.Presentation.Interfaces;
+using Waves.Framework.Services;
+using Waves.Framework.Services.Interfaces;
 using Waves.Framework.UI.WPF.Controls;
 
 namespace Waves.Framework.UI.WPF.Services;
@@ -103,7 +102,7 @@ public class WavesNavigationService : WavesNavigationServiceBase<object>
     }
 
     /// <inheritdoc />
-    protected override Task InitializePageAsync(IWavesPage<object> view, IWavesViewModel viewModel, bool addToHistory = true)
+    protected override async Task InitializePageAsync(IWavesPage<object> view, IWavesViewModel viewModel, bool addToHistory = true)
     {
         var region = GetRegion(view);
         if (region == null)
@@ -119,7 +118,7 @@ public class WavesNavigationService : WavesNavigationServiceBase<object>
         }
         if (contentControl.Content != null && contentControl.Content.GetType() == view.GetType())
         {
-            return Task.CompletedTask;
+            return;
         }
         
         DisappearView(contentControl.Content);
@@ -128,7 +127,6 @@ public class WavesNavigationService : WavesNavigationServiceBase<object>
         AppearView(contentControl.Content);
         
         Logger.LogDebug("Navigation to view {ViewType} with data context {ViewModelType} in region {Region} completed", view.GetType(), viewModel.GetType(), region);
-        return Task.CompletedTask;
     }
 
     /// <inheritdoc />

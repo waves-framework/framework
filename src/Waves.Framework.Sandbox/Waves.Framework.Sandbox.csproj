@@ -15,7 +15,7 @@
         <PackageReference Include="RandomDataGenerator.Net" Version="1.0.17" />
         <PackageReference Include="ReactiveUI" Version="20.1.1" />
         <PackageReference Include="ReactiveUI.Fody" Version="19.5.41" />
-        <PackageReference Include="RestSharp" Version="110.2.0" />
+        <PackageReference Include="RestSharp" Version="111.4.1" />
     </ItemGroup>
 
 
