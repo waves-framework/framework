@@ -1,4 +1,4 @@
-using Waves.Framework.UI.Attributes;
+using Waves.Framework.Attributes;
 using Waves.Framework.UI.Avalonia.Controls;
 using Waves.Sandbox;
 using Waves.Sandbox.ViewModels.Navigation.Window;

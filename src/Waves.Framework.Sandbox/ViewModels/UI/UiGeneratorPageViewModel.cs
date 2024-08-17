@@ -1,14 +1,9 @@
-﻿using System.Collections.ObjectModel;
-using System.Windows.Input;
+﻿using System.Windows.Input;
 using ReactiveUI;
-using ReactiveUI.Fody.Helpers;
-using Waves.Framework.UI.Attributes;
-using Waves.Framework.UI.Services.Interfaces;
-using Waves.Sandbox.Model.Color;
-using Waves.Sandbox.Services;
+using Waves.Framework.Attributes;
+using Waves.Framework.Services.Interfaces;
 using Waves.Sandbox.Services.Interfaces;
 using Waves.Sandbox.ViewModels.Base;
-using Waves.Sandbox.ViewModels.UI.Color;
 
 namespace Waves.Sandbox.ViewModels.UI;
 

@@ -1,9 +1,8 @@
 ﻿using System.Windows.Input;
 using ReactiveUI;
-using Waves.Framework.UI.Attributes;
-using Waves.Framework.UI.Services.Interfaces;
+using Waves.Framework.Attributes;
+using Waves.Framework.Services.Interfaces;
 using Waves.Sandbox.ViewModels.Base;
-using Waves.Sandbox.ViewModels.Navigation;
 using Waves.Sandbox.ViewModels.Navigation.Page;
 using Waves.Sandbox.ViewModels.Navigation.Window;
 using Waves.Sandbox.ViewModels.UI;

@@ -12,14 +12,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{9F8639D3-0
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Waves.Framework.UI", "src\Waves.Framework.UI\Waves.Framework.UI.csproj", "{51BCFACB-BBD3-4D30-B853-D882F30DCDEE}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sandbox", "Sandbox", "{40C7D322-800E-4047-AB89-63EE887CC558}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console", "Console", "{52D86F05-56C7-4573-AF04-48431532F68E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Waves.Framework.Sandbox", "src\Waves.Framework.Sandbox\Waves.Framework.Sandbox.csproj", "{12755002-2E1E-4E4E-AC88-1B9BD1E0DDBF}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,21 +26,10 @@ Global
 		{AA305599-F3A6-4D2A-A7E9-7B2B0501F6E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA305599-F3A6-4D2A-A7E9-7B2B0501F6E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA305599-F3A6-4D2A-A7E9-7B2B0501F6E8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{51BCFACB-BBD3-4D30-B853-D882F30DCDEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{51BCFACB-BBD3-4D30-B853-D882F30DCDEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{51BCFACB-BBD3-4D30-B853-D882F30DCDEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{51BCFACB-BBD3-4D30-B853-D882F30DCDEE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{12755002-2E1E-4E4E-AC88-1B9BD1E0DDBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{12755002-2E1E-4E4E-AC88-1B9BD1E0DDBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{12755002-2E1E-4E4E-AC88-1B9BD1E0DDBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{12755002-2E1E-4E4E-AC88-1B9BD1E0DDBF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{AA305599-F3A6-4D2A-A7E9-7B2B0501F6E8} = {52D86F05-56C7-4573-AF04-48431532F68E}
-		{52D86F05-56C7-4573-AF04-48431532F68E} = {40C7D322-800E-4047-AB89-63EE887CC558}
-		{12755002-2E1E-4E4E-AC88-1B9BD1E0DDBF} = {40C7D322-800E-4047-AB89-63EE887CC558}
 	EndGlobalSection
 EndGlobal

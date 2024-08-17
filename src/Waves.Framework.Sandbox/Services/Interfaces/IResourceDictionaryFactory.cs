@@ -1,4 +1,4 @@
-﻿using Waves.Framework.UI.Interfaces;
+﻿using Waves.Framework.Interfaces;
 
 namespace Waves.Sandbox.Services.Interfaces;
 

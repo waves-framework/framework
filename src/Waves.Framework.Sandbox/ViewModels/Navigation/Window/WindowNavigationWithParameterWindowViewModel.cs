@@ -1,4 +1,4 @@
-using Waves.Framework.UI.Attributes;
+using Waves.Framework.Attributes;
 
 namespace Waves.Sandbox.ViewModels.Navigation.Window;
 

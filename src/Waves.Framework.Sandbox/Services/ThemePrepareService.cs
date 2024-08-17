@@ -1,7 +1,6 @@
 ﻿using Waves.Framework.Attributes;
 using Waves.Framework.Enums;
-using Waves.Framework.UI.Services.Interfaces;
-using Waves.Sandbox.Model.Color;
+using Waves.Framework.Services.Interfaces;
 using Waves.Sandbox.Services.Interfaces;
 using Waves.Sandbox.ViewModels.UI.Color;
 

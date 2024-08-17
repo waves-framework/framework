@@ -1,6 +1,6 @@
 using System.Windows.Input;
 using ReactiveUI;
-using Waves.Framework.UI.Services.Interfaces;
+using Waves.Framework.Services.Interfaces;
 
 namespace Waves.Sandbox.ViewModels.Base;
 

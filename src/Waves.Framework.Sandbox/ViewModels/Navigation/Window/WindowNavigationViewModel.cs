@@ -1,5 +1,5 @@
 using ReactiveUI.Fody.Helpers;
-using Waves.Framework.UI.Attributes;
+using Waves.Framework.Attributes;
 using Waves.Sandbox.Services;
 
 namespace Waves.Sandbox.ViewModels.Navigation.Window;
